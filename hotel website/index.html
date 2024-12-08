@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotel Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1 ">Soyam Hotel</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Experience Luxury at Demo Hotel</h2>
+            <p>Where comfort meets elegance. Enjoy your stay in the heart of the city.</p>
+            <a href="#rooms" class="btn">Explore Rooms</a>
+        </div>
+    </section>
+
+    <section id="rooms" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Rooms</h2>
+            <div class="room-grid">
+                <!-- Room 1: Deluxe Room -->
+                <div class="room" data-aos="fade-up" data-aos-delay="100">
+                    <img src="delux room img.jpg" alt="Deluxe Room">
+                    <h3>Deluxe Room</h3>
+                    <p>Elegant decor and serene environment with city views.</p>
+                    <a href="deluxe.html" class="btn room-btn">View Details</a>
+                </div>
+    
+                <!-- Room 2: Suite Room -->
+                <div class="room" data-aos="fade-up" data-aos-delay="100">
+                    <img src="suite room img.jpg" alt="Suite Room">
+                    <h3>Suite Room</h3>
+                    <p>Spacious luxury with world-class amenities and personalized services.</p>
+                    <a href="suite.html" class="btn room-btn">View Details</a>
+                </div>
+    
+                <!-- Room 3: Presidential Suite -->
+                <div class="room" data-aos="fade-up" data-aos-delay="100">
+                    <img src="presidential room img.jpg" alt="Presidential Suite">
+                    <h3>Presidential Suite</h3>
+                    <p>Our finest suite offering unparalleled luxury and royal treatment.</p>
+                    <a href="presidential.html" class="btn room-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dining" class="section">
+        <div class="container">
+            <h2 class="section-title">Dining</h2>
+            <p>Indulge in a culinary journey at our world-class restaurants offering diverse cuisines.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p>For reservations or inquiries, call us at +123 456 7890 or email at info@soyamhotel.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Soyam Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, /* Animation duration */
+    once: true     /* Whether animation should happen only once */
+  });
+</script>
+
+<script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+</script>
+
+
+</html>

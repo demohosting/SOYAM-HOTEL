@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Taj Hotel</title>
+    <link rel="stylesheet" href="style.css"> <!-- Same CSS file for consistent design -->
+      <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Soyam Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="facilities.html" class="active">Facilities</a></li>
+                    <li><a href="booking.html">booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Our World-Class Facilities</h2>
+        <p>Experience luxury and comfort with our finest amenities.</p>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Facilities We Offer</h2>
+            <div class="facility-grid">
+                <div class="facility">
+                    <h3>Swimming Pool</h3>
+                    <img src="swimming pool.jpg" alt="Swimming Pool">
+                    <p>Our Olympic-size swimming pool offers a refreshing escape.</p>
+                </div>
+                <div class="facility">
+                    <h3>Spa & Wellness</h3>
+                    <img src="spa.jpg" alt="Spa & Wellness">
+                    <p>Indulge in rejuvenating spa therapies by expert professionals.</p>
+                </div>
+                <div class="facility">
+                    <h3>Fitness Center</h3>
+                    <img src="fitness center.jpg" alt="Fitness Center">
+                    <p>State-of-the-art gym with personal trainers available on request.</p>
+                </div>
+                <div class="facility">
+                    <h3>Conference Hall</h3>
+                    <img src="Conference hall.jpg" alt="Conference Hall">
+                    <p>Fully equipped conference hall to cater to your business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Soyam Hotel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, /* Animation duration */
+    once: true     /* Whether animation should happen only once */
+  });
+</script>
+
+<script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+</script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Room - Taj Hotel</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Soyam Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="booking.html">booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Suite Room Section -->
+    <section class="room-details" data-aos="fade-up">
+        <div class="container">
+            <h2>Suite Room</h2>
+            <img src="suite room img.jpg" alt="Suite Room" class="room-image">
+            <p>Our Suite Room offers a luxurious space for those looking for premium comfort and style. Ideal for business travelers or families seeking more space and sophistication.</p>
+
+            <h3>Price: ₹20,000 per night</h3>
+            <!-- Add availability status element here -->
+            <p class="availability-status" id="suite-status">Checking availability...</p>
+            <a href="booking.html" class="btn">Book Now</a>
+            <h3>Room Facilities</h3>
+            <ul>
+                <li>King-sized bed with premium bedding</li>
+                <li>Free high-speed Wi-Fi</li>
+                <li>Flat-screen TV with satellite channels</li>
+                <li>Spacious living area</li>
+                <li>Private bathroom with luxury toiletries</li>
+                <li>Mini bar and coffee maker</li>
+                <li>24/7 room service</li>
+            </ul>
+
+            <h3>Services Included</h3>
+            <ul>
+                <li>Complimentary breakfast and evening snacks</li>
+                <li>Laundry and ironing service</li>
+                <li>Daily housekeeping</li>
+                <li>Exclusive access to the VIP lounge</li>
+                <li>Access to swimming pool, gym, and spa</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Soyam Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to check room availability
+        function checkAvailability() {
+            const statusElement = document.getElementById('suite-status');
+            const isAvailable = Math.random() > 0.5; // Randomly set availability
+
+            if (isAvailable) {
+                statusElement.textContent = "Available";
+                statusElement.classList.add('available');
+                statusElement.classList.remove('not-available');
+            } else {
+                statusElement.textContent = "Not Available";
+                statusElement.classList.add('not-available');
+                statusElement.classList.remove('available');
+            }
+        }
+
+        // Call the function to set availability status
+        checkAvailability();
+    });
+</script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, /* Animation duration */
+    once: true     /* Whether animation should happen only once */
+  });
+</script>
+
+<script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+</script>
+</html>

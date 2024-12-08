@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidential Suite - Taj Hotel</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Soyam Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="booking.html">booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Presidential Suite Section -->
+    <section class="room-details" data-aos="fade-up">
+        <div class="container">
+            <h2>Presidential Suite</h2>
+            <img src="presidential room img.jpg" alt="Presidential Suite" class="room-image">
+            <p>The Presidential Suite is the epitome of luxury. With opulent decor, this suite offers the highest level of comfort and service, perfect for high-profile guests and dignitaries.</p>
+
+            <h3>Price: ₹50,000 per night</h3>
+            <!-- Add availability status element here -->
+            <p class="availability-status" id="presidential-status">Checking availability...</p>
+            <a href="booking.html" class="btn">Book Now</a>
+            <h3>Room Facilities</h3>
+            <ul>
+                <li>King-sized bed with royal bedding</li>
+                <li>Free ultra-high-speed Wi-Fi</li>
+                <li>Flat-screen TV with premium channels</li>
+                <li>Private lounge and dining area</li>
+                <li>Luxury bathroom with Jacuzzi and toiletries</li>
+                <li>Personal butler service</li>
+                <li>Fully stocked mini bar and coffee machine</li>
+                <li>24/7 room service and concierge</li>
+            </ul>
+
+            <h3>Services Included</h3>
+            <ul>
+                <li>Complimentary gourmet breakfast and dinner</li>
+                <li>Personalized laundry and dry cleaning service</li>
+                <li>Exclusive use of private spa</li>
+                <li>VIP transportation service</li>
+                <li>Access to all hotel amenities including gym, pool, and private lounge</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Soyam Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to check room availability
+        function checkAvailability() {
+            const statusElement = document.getElementById('presidential-status');
+            const isAvailable = Math.random() > 0.5; // Randomly set availability
+
+            if (isAvailable) {
+                statusElement.textContent = "Available";
+                statusElement.classList.add('available');
+                statusElement.classList.remove('not-available');
+            } else {
+                statusElement.textContent = "Not Available";
+                statusElement.classList.add('not-available');
+                statusElement.classList.remove('available');
+            }
+        }
+
+        // Call the function to set availability status
+        checkAvailability();
+    });
+</script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, /* Animation duration */
+    once: true     /* Whether animation should happen only once */
+  });
+</script>
+
+<script>
+    window.addEventListener('load', () => {
+        document.body.classList.add('loaded');
+    });
+</script>
+</html>

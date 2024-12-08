@@ -1,0 +1,442 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fefdfd; /* Light grey for the background */
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #607d8b; /* Blue-grey */
+    color: rgb(246, 248, 237);
+    padding: 20px 0;
+    border-bottom: 3px solid #b0bec5; /* Lighter blue-grey */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(209, 205, 218);
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #b0bec5; /* Lighter blue-grey on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f9fafb; /* Light blue-grey */
+    color: #607d8b; /* Darker blue-grey text */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #607d8b;
+    color: rgb(246, 240, 240);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero .btn:hover {
+    background-color: #b0bec5;
+    color: #607d8b;
+}
+
+/* Hero Section with Responsive Background Image */
+.hero {
+    background-image: url('hotel\ img.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fffbfd; /* Text color white for contrast */
+    text-align: center;
+    padding: 100px 0;
+    min-height: 100vh; /* Ensure the hero section takes at least the full height of the viewport */
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    flex-direction: column; /* Ensures content stacks vertically */
+}
+
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+    background-color: #051457;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #607d8b;
+    margin-bottom: 40px;
+}
+
+.room-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.room {
+    background-color: #eceff1;
+    color: #607d8b;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid #b0bec5;
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.room h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #455a64;
+}
+
+.room p {
+    margin: 10px 0;
+    color: #607d8b;
+}
+
+.room .btn {
+    display: inline-block;
+    background-color: #607d8b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.room .btn:hover {
+    background-color: #b0bec5;
+    color: #607d8b;
+}
+
+/* Facilities Section */
+.section p {
+    font-size: 18px;
+    color: #455a64; /* Darker shade of blue-grey */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #607d8b;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #455a64; /* Dark blue-grey */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px solid #b0bec5;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Text Sizes and Padding */
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0; /* Reduce padding on smaller screens */
+    }
+
+    .hero h2 {
+        font-size: 36px; /* Smaller text for mobile */
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+        padding: 8px 16px; /* Smaller button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px; /* Even smaller for very small screens */
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+        padding: 6px 12px; /* Even smaller button size */
+    }
+}
+
+/* Media Queries for responsive layout */
+@media (max-width: 768px) {
+    .room-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Facility Grid */
+.facility-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.facility {
+    background-color: #eceff1;
+    color: #607d8b;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    border: 2px solid #b0bec5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.facility img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.facility h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.facility p {
+    font-size: 16px;
+    color: #607d8b;
+}
+
+/* Media Queries for Facility Section */
+@media (max-width: 768px) {
+    .facility {
+        width: 90%;
+    }
+}
+
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contact-info, .contact-form {
+    background-color: #eceff1;
+    color: #607d8b;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    border: 2px solid #b0bec5;
+}
+
+.contact-info h3, .contact-form h3 {
+    font-size: 24px;
+    color: #455a64;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .contact-form label {
+    font-size: 16px;
+    color: #607d8b;
+    margin-bottom: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #b0bec5;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #455a64;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #607d8b;
+}
+
+.contact-form button {
+    background-color: #607d8b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #b0bec5;
+    color: #607d8b;
+}
+
+/* Media Queries for Contact Section */
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Smooth transition for hover effects */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Transition for buttons */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e90ff; /* Light blue color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Image transitions */
+.room-image {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.room-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation link transitions */
+nav ul li a {
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1e90ff; /* Light blue color on hover */
+}
+
+/* Footer smooth hover effects */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1e90ff; /* Light blue color */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade-in effect for the body */
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Room Availability Status */
+.availability-status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.available {
+    color: #28a745; /* Green for available */
+}
+
+.not-available {
+    color: #dc3545; /* Red for not available */
+}
+
+
